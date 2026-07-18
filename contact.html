@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Gram Panchayat NAGALA (C)</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- ================= HEADER ================= -->
+
+
+<header>
+
+
+<div class="logo-area">
+
+
+<img src="images/logo.png" alt="Logo">
+
+
+<div>
+
+<h1>
+Gram Panchayat
+</h1>
+
+
+<p>
+NAGALA (C) • Chandrapur
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="menu-btn" onclick="openSettings()">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+
+</header>
+
+
+<!-- SETTINGS PANEL -->
+
+<div id="settingsPanel" class="settings-panel">
+
+
+<div class="settings-header">
+
+<h3>
+⚙ Settings
+</h3>
+
+
+<i onclick="closeSettings()" 
+class="fa-solid fa-xmark"></i>
+
+
+</div>
+
+
+
+
+<!-- DARK MODE -->
+
+
+<div class="setting-item">
+
+
+<span>
+🌙 Dark Mode
+</span>
+
+
+<label class="switch">
+
+
+<input 
+type="checkbox"
+id="darkToggle">
+
+
+<span class="slider-round"></span>
+
+
+</label>
+
+
+</div>
+
+
+
+
+
+<!-- LANGUAGE -->
+
+
+<div class="setting-item">
+
+
+<h4>
+Language
+</h4>
+
+
+
+<button onclick="changeLanguage('en')">
+
+English
+
+</button>
+
+
+
+<button onclick="changeLanguage('hi')">
+
+हिंदी
+
+</button>
+
+
+
+
+<button onclick="changeLanguage('mr')">
+
+मराठी
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= HERO ================= -->
+
+
+<section class="slider">
+
+
+<div class="slide active">
+
+
+<img src="images/banner2.jpg">
+
+
+
+<div class="overlay">
+
+
+<h2>
+Get In Touch
+</h2>
+
+
+<h1>
+Contact Gram Panchayat
+</h1>
+
+
+<p>
+We are here to serve citizens
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= INTRO ================= -->
+
+
+<section class="section">
+
+
+<div class="card">
+
+
+<h2>
+Gram Panchayat Office
+</h2>
+
+
+<p>
+
+Contact us for village services, government schemes,
+certificates, complaints and development related information.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= CONTACT CARDS ================= -->
+
+
+<section class="section">
+
+
+<h2>
+Contact Information
+</h2>
+
+
+
+<div class="contact-grid">
+
+
+
+
+
+
+<div class="contact-card">
+
+
+<i class="fa-solid fa-location-dot"></i>
+
+
+<h3>
+Address
+</h3>
+
+
+<p>
+
+Gram Panchayat Office,
+
+NAGALA (C),
+
+Chandrapur,
+
+Maharashtra
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="contact-card">
+
+
+<i class="fa-solid fa-phone"></i>
+
+
+<h3>
+Phone
+</h3>
+
+
+<p>
+
++91 9876543210
+
+</p>
+
+
+<a href="tel:+919876543210">
+
+Call Now
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="contact-card">
+
+
+<i class="fa-solid fa-envelope"></i>
+
+
+<h3>
+Email
+</h3>
+
+
+<p>
+
+grampanchayat@email.com
+
+</p>
+
+
+<a href="mailto:grampanchayat@email.com">
+
+Send Mail
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="contact-card">
+
+
+<i class="fa-brands fa-whatsapp"></i>
+
+
+<h3>
+WhatsApp
+</h3>
+
+
+<p>
+
+Citizen Help Desk
+
+</p>
+
+
+<a href="https://wa.me/919876543210">
+
+Chat Now
+
+</a>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= OFFICE HOURS ================= -->
+
+
+<section class="section">
+
+
+<h2>
+Office Timing
+</h2>
+
+
+<div class="card">
+
+
+<p>
+
+<i class="fa-solid fa-clock"></i>
+
+Monday - Saturday
+
+</p>
+
+
+<p>
+
+10:00 AM - 5:30 PM
+
+</p>
+
+
+<p>
+
+Sunday : Closed
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+<!-- ================= GOOGLE MAP ================= -->
+
+<section class="section">
+
+<h2>
+Office Location
+</h2>
+
+
+<div class="map-box">
+
+
+<iframe
+
+src="https://www.google.com/maps?q=Chandrapur,Maharashtra&output=embed"
+
+loading="lazy">
+
+</iframe>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= FEEDBACK FORM ================= -->
+
+
+<section class="section">
+
+
+<h2>
+Citizen Feedback
+</h2>
+
+
+<div class="card">
+
+
+<form>
+
+
+<input 
+type="text"
+placeholder="Your Name"
+required>
+
+
+
+<input 
+type="tel"
+placeholder="Mobile Number"
+required>
+
+
+
+<input 
+type="email"
+placeholder="Email Address">
+
+
+
+<textarea 
+placeholder="Write Your Message">
+</textarea>
+
+
+
+<button type="submit">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Submit
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= EMERGENCY CONTACT ================= -->
+
+
+<section class="section">
+
+
+<h2>
+Emergency Numbers
+</h2>
+
+
+
+<div class="contact-grid">
+
+
+
+<div class="contact-card">
+
+<i class="fa-solid fa-truck-medical"></i>
+
+<h3>
+Ambulance
+</h3>
+
+<p>
+108
+</p>
+
+</div>
+
+
+
+
+<div class="contact-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>
+Police
+</h3>
+
+<p>
+100
+</p>
+
+</div>
+
+
+
+
+<div class="contact-card">
+
+<i class="fa-solid fa-fire"></i>
+
+<h3>
+Fire Service
+</h3>
+
+<p>
+101
+</p>
+
+</div>
+
+
+
+
+<div class="contact-card">
+
+<i class="fa-solid fa-phone"></i>
+
+<h3>
+Panchayat Help
+</h3>
+
+<p>
+9876543210
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= DOWNLOAD FORMS ================= -->
+
+
+<section class="section">
+
+
+<h2>
+Important Forms
+</h2>
+
+
+
+<div class="pdf-list">
+
+
+
+<div class="pdf-card">
+
+
+<div>
+
+<h3>
+Birth Certificate Form
+</h3>
+
+<p>
+Download Application PDF
+</p>
+
+</div>
+
+
+
+<a href="pdf/birth.pdf" download>
+
+<i class="fa-solid fa-download"></i>
+
+Download
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+<div class="pdf-card">
+
+
+<div>
+
+<h3>
+Residence Certificate Form
+</h3>
+
+<p>
+Download Application PDF
+</p>
+
+</div>
+
+
+
+<a href="pdf/residence.pdf" download>
+
+<i class="fa-solid fa-download"></i>
+
+Download
+
+</a>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= SOCIAL CONNECT ================= -->
+
+
+<section class="section">
+
+
+<div class="card">
+
+
+<h2>
+Connect With Us
+</h2>
+
+
+
+<p>
+
+Follow Gram Panchayat updates and announcements.
+
+</p>
+
+
+
+<div class="social">
+
+
+<a href="#">
+
+<i class="fa-brands fa-facebook"></i>
+
+</a>
+
+
+
+<a href="#">
+
+<i class="fa-brands fa-instagram"></i>
+
+</a>
+
+
+
+<a href="#">
+
+<i class="fa-brands fa-youtube"></i>
+
+</a>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer>
+
+
+<h3>
+Gram Panchayat NAGALA (C)
+</h3>
+
+
+<p>
+Chandrapur, Maharashtra
+</p>
+
+
+<p>
+Digital Village Portal
+</p>
+
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<!-- ================= WHATSAPP FLOAT ================= -->
+
+
+<a href="https://wa.me/919876543210" class="whatsapp">
+
+
+<i class="fa-brands fa-whatsapp"></i>
+
+
+</a>
+
+
+
+
+
+
+
+<!-- ================= SCROLL TOP ================= -->
+
+
+<button id="topBtn">
+
+
+<i class="fa-solid fa-arrow-up"></i>
+
+
+</button>
+
+
+
+
+
+
+
+
+<!-- ================= BOTTOM NAVIGATION ================= -->
+
+
+<nav class="bottom-nav">
+
+
+
+<a href="index.html">
+
+
+<i class="fa-solid fa-house"></i>
+
+
+<span>
+Home
+</span>
+
+
+</a>
+
+
+
+
+
+<a href="schemes.html">
+
+
+<i class="fa-solid fa-landmark"></i>
+
+
+<span>
+Scheme
+</span>
+
+
+</a>
+
+
+
+
+
+<a href="meetings.html">
+
+
+<i class="fa-solid fa-calendar-days"></i>
+
+
+<span>
+Meeting
+</span>
+
+
+</a>
+
+
+
+
+
+<a href="members.html">
+
+
+<i class="fa-solid fa-users"></i>
+
+
+<span>
+Members
+</span>
+
+
+</a>
+
+
+
+
+
+<a href="contact.html" class="active">
+
+
+<i class="fa-solid fa-phone"></i>
+
+
+<span>
+Contact
+</span>
+
+
+</a>
+
+
+
+
+</nav>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
