@@ -30,39 +30,118 @@
 
 <h1>Gram Panchayat</h1>
 
-<p>NAGALA (C) • Chandrapur • Chandrapur</p>
+<p>NAGALA (C) • Chandrapur</p>
 
 </div>
 
 </div>
 
-<div class="menu-btn">
+<div class="menu-btn" onclick="openSettings()">
 
-<i class="fas fa-bars"></i>
+<i class="fa-solid fa-bars"></i>
 
 </div>
 
 </header>
 
-<!-- ================= MENU ================= -->
 
-<nav class="menu">
 
-<a href="#">Home</a>
+<!-- SETTINGS PANEL -->
 
-<a href="#updates">Updates</a>
+<div id="settingsPanel" class="settings-panel">
 
-<a href="#schemes">Schemes</a>
 
-<a href="#meetings">Meetings</a>
+<div class="settings-header">
 
-<a href="#members">Members</a>
+<h3>
+⚙ Settings
+</h3>
 
-<a href="#gallery">Gallery</a>
 
-<a href="#contact">Contact</a>
+<i onclick="closeSettings()" 
+class="fa-solid fa-xmark"></i>
 
-</nav>
+
+</div>
+
+
+
+
+<!-- DARK MODE -->
+
+
+<div class="setting-item">
+
+
+<span>
+🌙 Dark Mode
+</span>
+
+
+<label class="switch">
+
+
+<input 
+type="checkbox"
+id="darkToggle">
+
+
+<span class="slider-round"></span>
+
+
+</label>
+
+
+</div>
+
+
+
+
+
+<!-- LANGUAGE -->
+
+
+<div class="setting-item">
+
+
+<h4>
+Language
+</h4>
+
+
+
+<button onclick="changeLanguage('en')">
+
+English
+
+</button>
+
+
+
+<button onclick="changeLanguage('hi')">
+
+हिंदी
+
+</button>
+
+
+
+
+<button onclick="changeLanguage('mr')">
+
+मराठी
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
 
 <!-- ================= SLIDER ================= -->
 
@@ -161,159 +240,96 @@
 
 </section>
 
-<!-- ================= QUICK ================= -->
 
-<section class="quick">
 
-<a href="#schemes">
+<!-- ================= VILLAGE SERVICES ================= -->
 
-<i class="fa-solid fa-landmark"></i>
+<section class="section">
 
-<span>Schemes</span>
+<h2>Village Services</h2>
 
-</a>
-
-<a href="#meetings">
-
-<i class="fa-solid fa-calendar-days"></i>
-
-<span>Meetings</span>
-
-</a>
-
-<a href="#members">
-
-<i class="fa-solid fa-users"></i>
-
-<span>Members</span>
-
-</a>
-
-<a href="#contact">
-
-<i class="fa-solid fa-phone"></i>
-
-<span>Contact</span>
-
-</a>
-
-</section>
-
-<!-- ================= SCHEMES ================= -->
-
-<section id="schemes" class="section">
-
-<h2>Government Schemes</h2>
 
 <div class="scheme-grid">
 
-<div class="scheme">
-
-<i class="fa-solid fa-house"></i>
-
-<h3>PM Awas</h3>
-
-</div>
 
 <div class="scheme">
 
-<i class="fa-solid fa-seedling"></i>
+<i class="fa-solid fa-road"></i>
 
-<h3>PM Kisan</h3>
+<h3>Development Work</h3>
+
+<p>
+Village roads, water supply, drainage and construction works.
+</p>
+
+<a href="work.html">
+View Details
+</a>
 
 </div>
+
+
 
 <div class="scheme">
 
-<i class="fa-solid fa-heart-pulse"></i>
+<i class="fa-solid fa-calendar-days"></i>
 
-<h3>Ayushman</h3>
+<h3>Programs</h3>
+
+<p>
+Village events, campaigns and upcoming programs.
+</p>
+
+<a href="programs.html">
+View Details
+</a>
 
 </div>
+
+
+
 
 <div class="scheme">
 
-<i class="fa-solid fa-graduation-cap"></i>
+<i class="fa-solid fa-file-invoice-dollar"></i>
 
-<h3>Scholarship</h3>
+<h3>Tax Services</h3>
+
+<p>
+House tax, water tax and payment information.
+</p>
+
+<a href="tax.html">
+View Details
+</a>
 
 </div>
+
+
+
+
+<div class="scheme">
+
+<i class="fa-solid fa-file-signature"></i>
+
+<h3>Permissions</h3>
+
+<p>
+Building, event and local permissions.
+</p>
+
+<a href="permission.html">
+View Details
+</a>
+
+</div>
+
+
 
 </div>
 
 </section>
 
-<!-- ================= MEETING ================= -->
-
-<section id="meetings" class="section">
-
-<h2>Upcoming Meeting</h2>
-
-<div class="meeting">
-
-<h3>Gram Sabha Meeting</h3>
-
-<p><i class="fa-solid fa-calendar"></i> 25 July 2026</p>
-
-<p><i class="fa-solid fa-clock"></i> 10:00 AM</p>
-
-<p><i class="fa-solid fa-location-dot"></i> Panchayat Office</p>
-
-</div>
-
-</section>
-
-<!-- ================= MEMBERS ================= -->
-
-<section id="members" class="section">
-
-<h2>Gram Panchayat Body</h2>
-
-<div class="member-grid">
-
-<div class="member">
-
-<img src="images/person.png">
-
-<h3>Sarpanch</h3>
-
-<p>Name Here</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/person.png">
-
-<h3>Up Sarpanch</h3>
-
-<p>Name Here</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/person.png">
-
-<h3>Gram Sevak</h3>
-
-<p>Name Here</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/person.png">
-
-<h3>Member</h3>
-
-<p>Name Here</p>
-
-</div>
-
-</div>
-
-</section>
 
 <!-- ================= GALLERY ================= -->
 
@@ -333,41 +349,7 @@
 
 </section>
 
-<!-- ================= CONTACT ================= -->
 
-<section id="contact" class="section">
-
-<h2>Contact</h2>
-
-<div class="contact">
-
-<p>
-
-<i class="fa-solid fa-location-dot"></i>
-
-Village Name, Taluka, District
-
-</p>
-
-<p>
-
-<i class="fa-solid fa-phone"></i>
-
-+91 9876543210
-
-</p>
-
-<p>
-
-<i class="fa-solid fa-envelope"></i>
-
-grampanchayat@email.com
-
-</p>
-
-</div>
-
-</section>
 
 <!-- ================= FOOTER ================= -->
 
@@ -392,5 +374,36 @@ grampanchayat@email.com
 
 <script src="script.js"></script>
 
+
+<!-- Bottom Navigation -->
+
+<nav class="bottom-nav">
+
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+<span>Home</span>
+</a>
+
+<a href="schemes.html">
+<i class="fa-solid fa-landmark"></i>
+<span>Schemes</span>
+</a>
+
+<a href="meetings.html">
+<i class="fa-solid fa-calendar-days"></i>
+<span>Meetings</span>
+</a>
+
+<a href="members.html">
+<i class="fa-solid fa-users"></i>
+<span>Members</span>
+</a>
+
+<a href="contact.html">
+<i class="fa-solid fa-phone"></i>
+<span>Contact</span>
+</a>
+
+</nav>
 </body>
 </html>
